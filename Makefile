@@ -36,6 +36,7 @@ $(BUNDLE): $(SOURCES) Resources/Info.plist Resources/AppIcon.icns deps/yt-dlp de
 		-o "$(MACOS_DIR)/$(APP_NAME)"
 	@cp Resources/Info.plist "$(CONTENTS)/"
 	@cp Resources/AppIcon.icns "$(RES_DIR)/"
+	@cp -R Resources/es.lproj "$(RES_DIR)/"
 	@cp deps/yt-dlp "$(RES_DIR)/"
 	@cp deps/ffmpeg "$(RES_DIR)/"
 	@chmod +x "$(RES_DIR)/yt-dlp" "$(RES_DIR)/ffmpeg"
